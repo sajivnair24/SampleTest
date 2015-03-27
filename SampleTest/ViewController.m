@@ -23,7 +23,7 @@
     
     ExtAudioFileRef audiofile;
     NSURL *theURL = [NSURL URLWithString:@"/Users/intelliswift/Downloads/test.m4a"];
-    NSURL *theURL2 = [NSURL URLWithString:@"/Users/intelliswift/Downloads/test4.m4a"];
+    NSURL *theURL2 = [NSURL URLWithString:@"/Users/intelliswift/Downloads/test4.m4a1"];
     ExtAudioFileOpenURL((__bridge CFURLRef)theURL, &audiofile);
     assert(audiofile);
     
