@@ -50,8 +50,7 @@
     clientFormat.mFramesPerPacket = 1;
     clientFormat.mBitsPerChannel = 32;
     clientFormat.mFormatID = kAudioFormatLinearPCM;
-    //clientFormat.mSampleRate = fileFormat.mSampleRate;
-    clientFormat.mSampleRate = clientFormat.mSampleRate * 1.2;
+    clientFormat.mSampleRate = fileFormat.mSampleRate;
     clientFormat.mFormatFlags = kLinearPCMFormatFlagIsFloat | kAudioFormatFlagIsNonInterleaved;
     err = ExtAudioFileSetProperty(audiofile, kExtAudioFileProperty_ClientDataFormat, sizeof(clientFormat), &clientFormat);
     
